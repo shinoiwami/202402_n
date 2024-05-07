@@ -1,0 +1,57 @@
+	<html>
+	  <head>
+	    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	    <script type="text/javascript">
+	      google.charts.load('current', {'packages':['corechart']});
+	      google.charts.setOnLoadCallback(drawChart);
+
+	      function drawChart() {
+	        var data = google.visualization.arrayToDataTable([
+
+['Date', 'Google', 'Apple', 'Meta', 'Amazon', 'Microsoft', 'IBM', 'RedHat', 'Intel', 'NVIDIA', 'Broadcom', 'VMware', 'SAP', 'Dassaults', 'Hexagon', 'Amadeus', 'Huawei', 'NTTData', 'Fujitsu', 'Hitachi', 'NEC'],
+['2023-07-01', 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+['2023-08-01', 0, 0, 1, 0, 0, 1, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+['2023-09-01', 0, 0, 2, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+['2023-12-01', 0, 0, 2, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+['2024-03-01', 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+['2024-04-01', 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+]);
+
+	        var options = {
+	          title: 'Timeline of Monthly Unique Developers:meta-llama/llama-recipes',
+	          hAxis: {
+	            title: 'Date',
+	            slantedText: true,
+	          },
+			  height: 400,
+			  legend: {position: 'top', maxLines: 5},
+//			  vAxis: {minValue: 0},
+			  vAxis: {viewWindow: {min: 0}},
+//	          curveType: 'function',
+	        };
+
+			var options_stacked = {
+	          title: 'Timeline of Monthly Unique Developers (Accumulation):meta-llama/llama-recipes	          ',
+			  isStacked: true,
+	          hAxis: {
+	            title: 'Date',
+	            slantedText: true,
+	          },
+			  height: 400,
+			  legend: {position: 'top', maxLines: 5},
+			  vAxis: {minValue: 0},
+			};
+
+	        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+	        var chart2 = new google.visualization.AreaChart(document.getElementById('area_chart'));
+
+	        chart.draw(data, options);
+	        chart2.draw(data, options_stacked);
+	      }
+	    </script>
+	  </head>
+	  <body>
+	    <div id="curve_chart" style="width: 800px; height: 420px"></div>
+	    <div id="area_chart" style="width: 800px; height: 420px"></div>
+	  </body>
+	</html>

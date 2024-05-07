@@ -1,0 +1,209 @@
+<html>
+  <head>
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <script type="text/javascript"     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['treemap']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'ID');
+        data.addColumn('string', 'Parent');
+        data.addColumn('number', 'Number of Lines');
+        data.addColumn('number', 'Color');
+        data.addColumn('string', 'Label');
+        data.addColumn('string', 'URL');
+        data.addRows([
+          ['OSS',null,0,0,'TOP','treemap_emerging_all.1.html'],
+['system-design-101 (0):000001','OSS',0,56094,'system-design-101 (0)','https://github.com/ByteByteGoHq/system-design-101'],
+['ollama (94):000002','OSS',94,51151,'ollama (94)','https://github.com/jmorganca/ollama'],
+['ollama (94):000003','OSS',94,47073,'ollama (94)','https://github.com/ollama/ollama'],
+['screenshot-to-code (2):000004','OSS',2,47029,'screenshot-to-code (2)','https://github.com/abi/screenshot-to-code'],
+['open-interpreter (35):000005','OSS',35,45465,'open-interpreter (35)','https://github.com/OpenInterpreter/open-interpreter'],
+['open-interpreter (35):000006','OSS',35,45350,'open-interpreter (35)','https://github.com/KillianLucas/open-interpreter'],
+['MetaGPT (32):000007','OSS',32,39243,'MetaGPT (32)','https://github.com/geekan/MetaGPT'],
+['grok-1 (6):000008','OSS',6,38854,'grok-1 (6)','https://github.com/xai-org/grok-1'],
+['Fooocus (27):000009','OSS',27,31832,'Fooocus (27)','https://github.com/lllyasviel/Fooocus'],
+['generative-ai-for-beginners (20):000010','OSS',20,31649,'generative-ai-for-beginners (20)','https://github.com/microsoft/generative-ai-for-beginners'],
+['quivr (13):000011','OSS',13,30858,'quivr (13)','https://github.com/StanGirard/quivr'],
+['gpt-pilot (8):000012','OSS',8,26254,'gpt-pilot (8)','https://github.com/Pythagora-io/gpt-pilot'],
+['maybe (46):000013','OSS',46,25845,'maybe (46)','https://github.com/maybe-finance/maybe'],
+['llm-course (1):000014','OSS',1,25757,'llm-course (1)','https://github.com/mlabonne/llm-course'],
+['GPTs (5):000015','OSS',5,25452,'GPTs (5)','https://github.com/linexjlin/GPTs'],
+['lobe-chat (57):000016','OSS',57,25301,'lobe-chat (57)','https://github.com/lobehub/lobe-chat'],
+['roop (1):000017','OSS',1,24839,'roop (1)','https://github.com/s0md3v/roop'],
+['autogen (89):000018','OSS',89,23610,'autogen (89)','https://github.com/microsoft/autogen'],
+['my-tv (10):000019','OSS',10,22441,'my-tv (10)','https://github.com/lizongying/my-tv'],
+['generative-models (3):000020','OSS',3,22250,'generative-models (3)','https://github.com/Stability-AI/generative-models'],
+['ChatDev (5):000021','OSS',5,20575,'ChatDev (5)','https://github.com/OpenBMB/ChatDev'],
+['GPT-SoVITS (32):000022','OSS',32,20169,'GPT-SoVITS (32)','https://github.com/RVC-Boss/GPT-SoVITS'],
+['audiocraft (2):000023','OSS',2,19286,'audiocraft (2)','https://github.com/facebookresearch/audiocraft'],
+['localGPT (5):000024','OSS',5,19136,'localGPT (5)','https://github.com/PromtEngineer/localGPT'],
+['opentofu (45):000025','OSS',45,19061,'opentofu (45)','https://github.com/opentofu/opentofu'],
+['web-check (12):000026','OSS',12,18895,'web-check (12)','https://github.com/Lissy93/web-check'],
+['LLaMA-Efficient-Tuning (21):000027','OSS',21,17840,'LLaMA-Efficient-Tuning (21)','https://github.com/hiyouga/LLaMA-Efficient-Tuning'],
+['gpt-crawler (4):000028','OSS',4,17368,'gpt-crawler (4)','https://github.com/BuilderIO/gpt-crawler'],
+['llama2.c (2):000029','OSS',2,15859,'llama2.c (2)','https://github.com/karpathy/llama2.c'],
+['ChatGLM2-6B (1):000030','OSS',1,15470,'ChatGLM2-6B (1)','https://github.com/THUDM/ChatGLM2-6B'],
+['OpenVoice (8):000031','OSS',8,14931,'OpenVoice (8)','https://github.com/myshell-ai/OpenVoice'],
+['gkd (1):000032','OSS',1,14679,'gkd (1)','https://github.com/gkd-kit/gkd'],
+['generative_agents (0):000033','OSS',0,14545,'generative_agents (0)','https://github.com/joonspk-research/generative_agents'],
+['SuperAGI (0):000034','OSS',0,14434,'SuperAGI (0)','https://github.com/TransformerOptimus/SuperAGI'],
+['codellama (0):000035','OSS',0,14093,'codellama (0)','https://github.com/facebookresearch/codellama'],
+['AnimateAnyone (0):000036','OSS',0,13816,'AnimateAnyone (0)','https://github.com/HumanAIGC/AnimateAnyone'],
+['LLMs-from-scratch (11):000037','OSS',11,12899,'LLMs-from-scratch (11)','https://github.com/rasbt/LLMs-from-scratch'],
+['draw-a-ui (0):000038','OSS',0,12689,'draw-a-ui (0)','https://github.com/SawyerHood/draw-a-ui'],
+['Chat2DB (13):000039','OSS',13,12609,'Chat2DB (13)','https://github.com/chat2db/Chat2DB'],
+['facefusion (1):000040','OSS',1,12216,'facefusion (1)','https://github.com/facefusion/facefusion'],
+['monaspace (0):000041','OSS',0,12071,'monaspace (0)','https://github.com/githubnext/monaspace'],
+['clash-verge-rev (17):000042','OSS',17,11824,'clash-verge-rev (17)','https://github.com/clash-verge-rev/clash-verge-rev'],
+['developer (0):000043','OSS',0,11646,'developer (0)','https://github.com/smol-ai/developer'],
+['jan (28):000044','OSS',28,11569,'jan (28)','https://github.com/janhq/jan'],
+['devika (39):000045','OSS',39,11202,'devika (39)','https://github.com/stitionai/devika'],
+['ChatGLM3 (10):000046','OSS',10,11168,'ChatGLM3 (10)','https://github.com/THUDM/ChatGLM3'],
+['Qwen-7B (8):000047','OSS',8,10904,'Qwen-7B (8)','https://github.com/QwenLM/Qwen-7B'],
+['box (1):000048','OSS',1,10677,'box (1)','https://github.com/liu673cn/box'],
+['gaussian-splatting (3):000049','OSS',3,10455,'gaussian-splatting (3)','https://github.com/graphdeco-inria/gaussian-splatting'],
+['Open-Sora (29):000050','OSS',29,10362,'Open-Sora (29)','https://github.com/hpcaitech/Open-Sora'],
+['Llama2-Chinese (5):000051','OSS',5,10333,'Llama2-Chinese (5)','https://github.com/FlagAlpha/Llama2-Chinese'],
+['open-llms (5):000052','OSS',5,10158,'open-llms (5)','https://github.com/eugeneyan/open-llms'],
+['Qwen (8):000053','OSS',8,10123,'Qwen (8)','https://github.com/QwenLM/Qwen'],
+['gorilla (25):000054','OSS',25,10008,'gorilla (25)','https://github.com/ShishirPatil/gorilla'],
+['seamless_communication (4):000055','OSS',4,9982,'seamless_communication (4)','https://github.com/facebookresearch/seamless_communication'],
+['llamafile (13):000056','OSS',13,9897,'llamafile (13)','https://github.com/Mozilla-Ocho/llamafile'],
+['Startup-CTO-Handbook (3):000057','OSS',3,9859,'Startup-CTO-Handbook (3)','https://github.com/ZachGoldberg/Startup-CTO-Handbook'],
+['windows (6):000058','OSS',6,9809,'windows (6)','https://github.com/dockur/windows'],
+['continue (36):000059','OSS',36,9645,'continue (36)','https://github.com/continuedev/continue'],
+['wg-easy (0):000060','OSS',0,9643,'wg-easy (0)','https://github.com/WeeJeWel/wg-easy'],
+['biome (87):000061','OSS',87,9560,'biome (87)','https://github.com/biomejs/biome'],
+['awesome-system-design-resources (1):000062','OSS',1,9560,'awesome-system-design-resources (1)','https://github.com/ashishps1/awesome-system-design-resources'],
+['magic-animate (0):000063','OSS',0,9519,'magic-animate (0)','https://github.com/magic-research/magic-animate'],
+['crewAI (39):000064','OSS',39,9451,'crewAI (39)','https://github.com/joaomdmoura/crewAI'],
+['aider (4):000065','OSS',4,9412,'aider (4)','https://github.com/paul-gauthier/aider'],
+['ollama-webui (76):000066','OSS',76,9212,'ollama-webui (76)','https://github.com/ollama-webui/ollama-webui'],
+['fabric (48):000067','OSS',48,9097,'fabric (48)','https://github.com/danielmiessler/fabric'],
+['MediaCrawler (17):000068','OSS',17,9095,'MediaCrawler (17)','https://github.com/NanmiCoder/MediaCrawler'],
+['InstantID (6):000069','OSS',6,9038,'InstantID (6)','https://github.com/InstantID/InstantID'],
+['copilot-gpt4-service (0):000070','OSS',0,9022,'copilot-gpt4-service (0)','https://github.com/aaamoon/copilot-gpt4-service'],
+['anything-llm (12):000071','OSS',12,9018,'anything-llm (12)','https://github.com/Mintplex-Labs/anything-llm'],
+['pkl (37):000072','OSS',37,8995,'pkl (37)','https://github.com/apple/pkl'],
+['AnimateDiff (1):000073','OSS',1,8736,'AnimateDiff (1)','https://github.com/guoyww/AnimateDiff'],
+['StreamDiffusion (3):000074','OSS',3,8551,'StreamDiffusion (3)','https://github.com/cumulo-autumn/StreamDiffusion'],
+['dockge (4):000075','OSS',4,8434,'dockge (4)','https://github.com/louislam/dockge'],
+['MemGPT (15):000076','OSS',15,8247,'MemGPT (15)','https://github.com/cpacker/MemGPT'],
+['embedchain (19):000077','OSS',19,8243,'embedchain (19)','https://github.com/embedchain/embedchain'],
+['mistral-src (1):000078','OSS',1,8141,'mistral-src (1)','https://github.com/mistralai/mistral-src'],
+['cv (2):000079','OSS',2,8083,'cv (2)','https://github.com/BartoszJarocki/cv'],
+['OpenGFW (6):000080','OSS',6,7992,'OpenGFW (6)','https://github.com/apernet/OpenGFW'],
+['facechain (11):000081','OSS',11,7934,'facechain (11)','https://github.com/modelscope/facechain'],
+['llama-recipes (19):000082','OSS',19,7884,'llama-recipes (19)','https://github.com/facebookresearch/llama-recipes'],
+['path-to-senior-engineer-handbook (3):000083','OSS',3,7879,'path-to-senior-engineer-handbook (3)','https://github.com/jordan-cutler/path-to-senior-engineer-handbook'],
+['PhotoMaker (3):000084','OSS',3,7860,'PhotoMaker (3)','https://github.com/TencentARC/PhotoMaker'],
+['TypeChat (8):000085','OSS',8,7830,'TypeChat (8)','https://github.com/microsoft/TypeChat'],
+['nougat (0):000086','OSS',0,7828,'nougat (0)','https://github.com/facebookresearch/nougat'],
+['promptflow (53):000087','OSS',53,7762,'promptflow (53)','https://github.com/microsoft/promptflow'],
+['ai (43):000088','OSS',43,7697,'ai (43)','https://github.com/vercel-labs/ai'],
+['dm-ticket (0):000089','OSS',0,7645,'dm-ticket (0)','https://github.com/ClassmateLin/dm-ticket'],
+['llrt (32):000090','OSS',32,7447,'llrt (32)','https://github.com/awslabs/llrt'],
+['gpt4free-ts (2):000091','OSS',2,7402,'gpt4free-ts (2)','https://github.com/xiangsx/gpt4free-ts'],
+['minbpe (10):000092','OSS',10,7314,'minbpe (10)','https://github.com/karpathy/minbpe'],
+['XAgent (1):000093','OSS',1,7283,'XAgent (1)','https://github.com/OpenBMB/XAgent'],
+['DeepLearningSystem (1):000094','OSS',1,7197,'DeepLearningSystem (1)','https://github.com/chenzomi12/DeepLearningSystem'],
+['gpt-researcher (11):000095','OSS',11,7177,'gpt-researcher (11)','https://github.com/assafelovic/gpt-researcher'],
+['CodeGeeX2 (0):000096','OSS',0,7134,'CodeGeeX2 (0)','https://github.com/THUDM/CodeGeeX2'],
+['hiddify-next (26):000097','OSS',26,7110,'hiddify-next (26)','https://github.com/hiddify/hiddify-next'],
+['chatgpt_system_prompt (2):000098','OSS',2,7054,'chatgpt_system_prompt (2)','https://github.com/LouisShark/chatgpt_system_prompt'],
+['sweep (8):000099','OSS',8,7049,'sweep (8)','https://github.com/sweepai/sweep'],
+['VALL-E-X (0):000100','OSS',0,7037,'VALL-E-X (0)','https://github.com/Plachtaa/VALL-E-X'],
+['open-webui (76):000101','OSS',76,7008,'open-webui (76)','https://github.com/open-webui/open-webui'],
+['FastUI (12):000102','OSS',12,7002,'FastUI (12)','https://github.com/samuelcolvin/FastUI'],
+['Yi (14):000103','OSS',14,6961,'Yi (14)','https://github.com/01-ai/Yi'],
+['ai (43):000104','OSS',43,6961,'ai (43)','https://github.com/vercel/ai'],
+['FastSAM (0):000105','OSS',0,6822,'FastSAM (0)','https://github.com/CASIA-IVA-Lab/FastSAM'],
+['magika (26):000106','OSS',26,6819,'magika (26)','https://github.com/google/magika'],
+['data-engineer-handbook (10):000107','OSS',10,6792,'data-engineer-handbook (10)','https://github.com/DataEngineer-io/data-engineer-handbook'],
+['gpt-migrate (0):000108','OSS',0,6776,'gpt-migrate (0)','https://github.com/0xpayne/gpt-migrate'],
+['yolov9 (1):000109','OSS',1,6711,'yolov9 (1)','https://github.com/WongKinYiu/yolov9'],
+['OpenDevin (100):000110','OSS',100,6697,'OpenDevin (100)','https://github.com/OpenDevin/OpenDevin'],
+['PowerInfer (5):000111','OSS',5,6681,'PowerInfer (5)','https://github.com/SJTU-IPADS/PowerInfer'],
+['search_with_lepton (0):000112','OSS',0,6663,'search_with_lepton (0)','https://github.com/leptonai/search_with_lepton'],
+['Chinese-LLaMA-Alpaca-2 (1):000113','OSS',1,6554,'Chinese-LLaMA-Alpaca-2 (1)','https://github.com/ymcui/Chinese-LLaMA-Alpaca-2'],
+['FastUI (12):000114','OSS',12,6549,'FastUI (12)','https://github.com/pydantic/FastUI'],
+['IPTV (1):000115','OSS',1,6546,'IPTV (1)','https://github.com/joevess/IPTV'],
+['Bert-VITS2 (5):000116','OSS',5,6520,'Bert-VITS2 (5)','https://github.com/fishaudio/Bert-VITS2'],
+['TinyLlama (2):000117','OSS',2,6479,'TinyLlama (2)','https://github.com/jzhang38/TinyLlama'],
+['conductor (18):000118','OSS',18,6427,'conductor (18)','https://github.com/conductor-oss/conductor'],
+['Open-Sora-Plan (33):000119','OSS',33,6222,'Open-Sora-Plan (33)','https://github.com/PKU-YuanGroup/Open-Sora-Plan'],
+['DevOpsGPT (1):000120','OSS',1,6204,'DevOpsGPT (1)','https://github.com/kuafuai/DevOpsGPT'],
+['EmotiVoice (0):000121','OSS',0,6157,'EmotiVoice (0)','https://github.com/netease-youdao/EmotiVoice'],
+['LWM (4):000122','OSS',4,6150,'LWM (4)','https://github.com/LargeWorldModel/LWM'],
+['insanely-fast-whisper (3):000123','OSS',3,6130,'insanely-fast-whisper (3)','https://github.com/Vaibhavs10/insanely-fast-whisper'],
+['mlbookcamp-code (2):000124','OSS',2,6083,'mlbookcamp-code (2)','https://github.com/alexeygrigorev/mlbookcamp-code'],
+['litellm (96):000125','OSS',96,6038,'litellm (96)','https://github.com/BerriAI/litellm'],
+['aidea (2):000126','OSS',2,6009,'aidea (2)','https://github.com/mylxsw/aidea'],
+['opengpts (20):000127','OSS',20,5948,'opengpts (20)','https://github.com/langchain-ai/opengpts'],
+['ChatGPT-Midjourney (3):000128','OSS',3,5937,'ChatGPT-Midjourney (3)','https://github.com/Licoy/ChatGPT-Midjourney'],
+['clone-voice (1):000129','OSS',1,5845,'clone-voice (1)','https://github.com/jianchang512/clone-voice'],
+['RealChar (1):000130','OSS',1,5800,'RealChar (1)','https://github.com/Shaunwei/RealChar'],
+['vanna (21):000131','OSS',21,5750,'vanna (21)','https://github.com/vanna-ai/vanna'],
+['rags (0):000132','OSS',0,5661,'rags (0)','https://github.com/run-llama/rags'],
+['open-resume (0):000133','OSS',0,5605,'open-resume (0)','https://github.com/xitanggg/open-resume'],
+['ecoute (0):000134','OSS',0,5583,'ecoute (0)','https://github.com/SevaSk/ecoute'],
+['The-Grand-Complete-Data-Science-Materials (0):000135','OSS',0,5562,'The-Grand-Complete-Data-Science-Materials (0)','https://github.com/krishnaik06/The-Grand-Complete-Data-Science-Materials'],
+['nuejs (8):000136','OSS',8,5555,'nuejs (8)','https://github.com/nuejs/nuejs'],
+['drools (17):000137','OSS',17,5427,'drools (17)','https://github.com/kiegroup/drools'],
+['Bard-API (3):000138','OSS',3,5406,'Bard-API (3)','https://github.com/dsdanielpark/Bard-API'],
+['generative-ai (51):000139','OSS',51,5371,'generative-ai (51)','https://github.com/GoogleCloudPlatform/generative-ai'],
+['Depth-Anything (1):000140','OSS',1,5288,'Depth-Anything (1)','https://github.com/LiheYoung/Depth-Anything'],
+['rolldown (60):000141','OSS',60,5275,'rolldown (60)','https://github.com/rolldown/rolldown'],
+['WARP-Clash-API (7):000142','OSS',7,5266,'WARP-Clash-API (7)','https://github.com/vvbbnn00/WARP-Clash-API'],
+['lit-gpt (18):000143','OSS',18,5257,'lit-gpt (18)','https://github.com/Lightning-AI/lit-gpt'],
+['system-design (2):000144','OSS',2,5248,'system-design (2)','https://github.com/systemdesign42/system-design'],
+['QAnything (17):000145','OSS',17,5230,'QAnything (17)','https://github.com/netease-youdao/QAnything'],
+['InternLM (7):000146','OSS',7,5171,'InternLM (7)','https://github.com/InternLM/InternLM'],
+['Voyager (0):000147','OSS',0,5146,'Voyager (0)','https://github.com/MineDojo/Voyager'],
+['typehero (7):000148','OSS',7,5088,'typehero (7)','https://github.com/typehero/typehero'],
+['OpenChat (2):000149','OSS',2,5051,'OpenChat (2)','https://github.com/openchatai/OpenChat'],
+['DeepSeek-Coder (6):000150','OSS',6,5045,'DeepSeek-Coder (6)','https://github.com/deepseek-ai/DeepSeek-Coder'],
+['infinigen (3):000151','OSS',3,5030,'infinigen (3)','https://github.com/princeton-vl/infinigen'],
+['surya (3):000152','OSS',3,5029,'surya (3)','https://github.com/VikParuchuri/surya'],
+['gemma.cpp (22):000153','OSS',22,5006,'gemma.cpp (22)','https://github.com/google/gemma.cpp'],
+['ShortGPT (3):000154','OSS',3,5003,'ShortGPT (3)','https://github.com/RayVentura/ShortGPT']
+        ]);
+
+        var tree = new google.visualization.TreeMap(document.getElementById('chart_div'));
+
+        var options = {
+          highlightOnMouseOver: true,
+          maxDepth: 1,
+          maxPostDepth: 2,
+          minHighlightColor: '#8c6bb1',
+          midHighlightColor: '#9ebcda',
+          maxHighlightColor: '#edf8fb',
+          minColor: '#009988',
+          midColor: '#f7f7f7',
+          maxColor: '#dd8899',
+          headerHeight: 15,
+          showScale: true,
+          height: 800,
+          useWeightedAverageForAggregation: true,
+          generateTooltip: showFullTooltip
+        };
+
+        tree.draw(data, options);
+
+
+        function showFullTooltip(row, size, value) {
+          return '<div style="background:#fd9; padding:10px; border-style:solid">' +
+                 '<strong><a href="' + data.getValue(row, 5) + '">' + data.getValue(row, 4) + '</a></strong><br>' +
+                 ' </div>';
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div id="chart_div" style="width: 1200px; height: 800px;"></div>
+  </body>
+</html>

@@ -1,0 +1,112 @@
+<html>
+  <head>
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <script type="text/javascript"     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['treemap']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'ID');
+        data.addColumn('string', 'Parent');
+        data.addColumn('number', 'Number of Lines');
+        data.addColumn('number', 'Color');
+        data.addColumn('string', 'Label');
+        data.addColumn('string', 'URL');
+        data.addRows([
+          ['OSS',null,0,0,'TOP','treemap_popular_all.0.html'],
+['freeCodeCamp:000001','OSS',1,387327,'freeCodeCamp','https://github.com/freeCodeCamp/freeCodeCamp'],
+['free-programming-books:000002','OSS',1,316752,'free-programming-books','https://github.com/EbookFoundation/free-programming-books'],
+['awesome:000003','OSS',1,293858,'awesome','https://github.com/sindresorhus/awesome'],
+['public-apis:000004','OSS',1,287524,'public-apis','https://github.com/public-apis/public-apis'],
+['coding-interview-university:000005','OSS',1,280496,'coding-interview-university','https://github.com/jwasham/coding-interview-university'],
+['developer-roadmap:000006','OSS',1,270380,'developer-roadmap','https://github.com/kamranahmedse/developer-roadmap'],
+['996.ICU:000007','OSS',1,269026,'996.ICU','https://github.com/996icu/996.ICU'],
+['build-your-own-x:000008','OSS',1,257406,'build-your-own-x','https://github.com/codecrafters-io/build-your-own-x'],
+['build-your-own-x:000009','OSS',1,250037,'build-your-own-x','https://github.com/danistefanovic/build-your-own-x'],
+['system-design-primer:000010','OSS',1,248797,'system-design-primer','https://github.com/donnemartin/system-design-primer'],
+['react:000011','OSS',1,220642,'react','https://github.com/facebook/react'],
+['vue:000012','OSS',1,206594,'vue','https://github.com/vuejs/vue'],
+['awesome-python:000013','OSS',1,201133,'awesome-python','https://github.com/vinta/awesome-python'],
+['javascript-algorithms:000014','OSS',1,182711,'javascript-algorithms','https://github.com/trekhleb/javascript-algorithms'],
+['Python:000015','OSS',1,179516,'Python','https://github.com/TheAlgorithms/Python'],
+['You-Dont-Know-JS:000016','OSS',1,176142,'You-Dont-Know-JS','https://github.com/getify/You-Dont-Know-JS'],
+['awesome-selfhosted:000017','OSS',1,174271,'awesome-selfhosted','https://github.com/awesome-selfhosted/awesome-selfhosted'],
+['CS-Notes:000018','OSS',1,171764,'CS-Notes','https://github.com/CyC2018/CS-Notes'],
+['linux:000019','OSS',1,168463,'linux','https://github.com/torvalds/linux'],
+['ohmyzsh:000020','OSS',1,167165,'ohmyzsh','https://github.com/ohmyzsh/ohmyzsh'],
+['bootstrap:000021','OSS',1,167088,'bootstrap','https://github.com/twbs/bootstrap'],
+['project-based-learning:000022','OSS',1,162669,'project-based-learning','https://github.com/tuvtran/project-based-learning'],
+['Auto-GPT:000023','OSS',1,161386,'Auto-GPT','https://github.com/Torantulino/Auto-GPT'],
+['Auto-GPT:000024','OSS',1,161271,'Auto-GPT','https://github.com/Significant-Gravitas/Auto-GPT'],
+['flutter:000025','OSS',1,160724,'flutter','https://github.com/flutter/flutter'],
+['computer-science:000026','OSS',1,160235,'computer-science','https://github.com/ossu/computer-science'],
+['project-based-learning:000027','OSS',1,160135,'project-based-learning','https://github.com/practical-tutorials/project-based-learning'],
+['AutoGPT:000028','OSS',1,160022,'AutoGPT','https://github.com/Significant-Gravitas/AutoGPT'],
+['vscode:000029','OSS',1,156550,'vscode','https://github.com/microsoft/vscode'],
+['gitignore:000030','OSS',1,156528,'gitignore','https://github.com/github/gitignore'],
+['Python-100-Days:000031','OSS',1,148895,'Python-100-Days','https://github.com/jackfrued/Python-100-Days'],
+['the-art-of-command-line:000032','OSS',1,148660,'the-art-of-command-line','https://github.com/jlevy/the-art-of-command-line'],
+['JavaGuide:000033','OSS',1,142207,'JavaGuide','https://gitee.com/SnailClimb/JavaGuide'],
+['javascript:000034','OSS',1,141846,'javascript','https://github.com/airbnb/javascript'],
+['JavaGuide:000035','OSS',1,141754,'JavaGuide','https://github.com/Snailclimb/JavaGuide'],
+['youtube-dl:000036','OSS',1,127703,'youtube-dl','https://github.com/ytdl-org/youtube-dl'],
+['the-book-of-secret-knowledge:000037','OSS',1,126818,'the-book-of-secret-knowledge','https://github.com/trimstray/the-book-of-secret-knowledge'],
+['stable-diffusion-webui:000038','OSS',1,125478,'stable-diffusion-webui','https://github.com/AUTOMATIC1111/stable-diffusion-webui'],
+['transformers:000039','OSS',1,123168,'transformers','https://github.com/huggingface/transformers'],
+['fucking-algorithm:000040','OSS',1,122971,'fucking-algorithm','https://github.com/labuladong/fucking-algorithm'],
+['awesome-go:000041','OSS',1,120363,'awesome-go','https://github.com/avelino/awesome-go'],
+['next.js:000042','OSS',1,119627,'next.js','https://github.com/vercel/next.js'],
+['go:000043','OSS',1,119456,'go','https://github.com/golang/go'],
+['30-seconds-of-code:000044','OSS',1,119077,'30-seconds-of-code','https://github.com/30-seconds/30-seconds-of-code'],
+['30-seconds-of-code:000045','OSS',1,118688,'30-seconds-of-code','https://github.com/Chalarangelo/30-seconds-of-code'],
+['react-native:000046','OSS',1,115111,'react-native','https://github.com/facebook/react-native'],
+['electron:000047','OSS',1,111926,'electron','https://github.com/electron/electron'],
+['free-programming-books-zh_CN:000048','OSS',1,109074,'free-programming-books-zh_CN','https://github.com/justjavac/free-programming-books-zh_CN'],
+['tech-interview-handbook:000049','OSS',1,108510,'tech-interview-handbook','https://github.com/yangshun/tech-interview-handbook'],
+['d3:000050','OSS',1,107412,'d3','https://github.com/d3/d3'],
+['kubernetes:000051','OSS',1,106762,'kubernetes','https://github.com/kubernetes/kubernetes'],
+['axios:000052','OSS',1,103634,'axios','https://github.com/axios/axios'],
+['awesome-chatgpt-prompts:000053','OSS',1,103596,'awesome-chatgpt-prompts','https://github.com/f/awesome-chatgpt-prompts'],
+['PowerToys:000054','OSS',1,103397,'PowerToys','https://github.com/microsoft/PowerToys'],
+['node:000055','OSS',1,102366,'node','https://github.com/nodejs/node'],
+['scrcpy:000056','OSS',1,101802,'scrcpy','https://github.com/Genymobile/scrcpy'],
+['create-react-app:000057','OSS',1,101793,'create-react-app','https://github.com/facebook/create-react-app']
+        ]);
+
+        var tree = new google.visualization.TreeMap(document.getElementById('chart_div'));
+
+        var options = {
+          highlightOnMouseOver: true,
+          maxDepth: 1,
+          maxPostDepth: 2,
+          minHighlightColor: '#8c6bb1',
+          midHighlightColor: '#9ebcda',
+          maxHighlightColor: '#edf8fb',
+          minColor: '#009988',
+          midColor: '#f7f7f7',
+          maxColor: '#dd8899',
+          headerHeight: 15,
+          showScale: true,
+          height: 800,
+          useWeightedAverageForAggregation: true,
+          generateTooltip: showFullTooltip
+        };
+
+        tree.draw(data, options);
+
+
+        function showFullTooltip(row, size, value) {
+          return '<div style="background:#fd9; padding:10px; border-style:solid">' +
+                 '<strong><a href="' + data.getValue(row, 5) + '">' + data.getValue(row, 4) + '</a></strong><br>' +
+                 ' </div>';
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div id="chart_div" style="width: 1200px; height: 800px;"></div>
+  </body>
+</html>
